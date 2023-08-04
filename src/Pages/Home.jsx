@@ -13,8 +13,8 @@ const Home = (props) => {
     fetch(url)
       .then(res => res.json())
       .then(res => setData(res))
-  })
-  console.log(data);
+  },[])
+  // console.log(data);
   return (
     <div >
       <div id='grid'>
