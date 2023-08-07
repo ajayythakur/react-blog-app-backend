@@ -31,7 +31,9 @@ const Bollywood = () => {
                     </div>
                     {/* <div className='side-inline'> */}
                     <div className='adv_top'>                
-                        <div className='add'>Advertisement</div>
+                        <div className='add'>
+                        <img src="http://www.connectingsatara.com/Images/Demo-Tents-Suppliers-Godoli-Satara-7966537A?S=N&IT=1&Id=1028" alt="advertisement" />
+                        </div>
                         <div className='topPos' >Top Posts</div>
                         {data.filter((article) => { return article.category === "Bollywood" }).map((n) => (
                         <Link to='/DetailPage' state={n}>
