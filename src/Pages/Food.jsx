@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
+import adv from "../Images/adv.jpg"
+
 const Food = () => {
   // const [detail] = useContext(store);
   const [data, setData] = useState([]);
@@ -31,7 +33,7 @@ const Food = () => {
       {/* <div className='side-inline'> */}
       <div className='adv_top'>
       <div className='add'>
-                        <img src="http://www.connectingsatara.com/Images/Demo-Tents-Suppliers-Godoli-Satara-7966537A?S=N&IT=1&Id=1028" alt="advertisement" />
+                        <img src={adv} alt="advertisement" />
                         </div>
         <div className='topPos' >Top Posts</div>
         {data.filter((article) => { return article.category === "Food" }).map((n) => (
